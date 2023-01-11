@@ -1,15 +1,17 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
+  "quick-start": "Quick Start",
+  "getting-started": "Getting Started",
+  "pinning": "IPFS Pinning",
+  "ipns": "IPNS",
+  "sites": "Sites (Soon)",
+  "domains": "Custom Domains (Soon)",
+  "terms": "Terms and Conditions",
+  "privacy": "Privacy",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://twitter.com/fleekxyz",
     "newWindow": true
   }
 }

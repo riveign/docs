@@ -1,0 +1,39 @@
+# IPFS Pinning
+
+## What is IPFS?
+
+The Interplanetary File System (IPFS) is a distributed file storage protocol that allows computers all over the globe to store and serve files as part of a giant peer-to-peer network.
+
+## Pinning a File
+
+### What is Pinning?
+
+Pinning is the mechanism that allows you to tell IPFS to always keep a given object somewhere — the default being your local node, though in this case you will be pinning the object to the Fleek IPFS Node.
+
+### How to pin a file?
+
+There are many different ways that you could use Fleek interfaces to pin a file on IPFS
+
+import { Tab, Tabs } from 'nextra-theme-docs'
+import { Callout } from 'nextra-theme-docs'
+
+<Tabs items={['CLI', 'SDK', 'UI']}>
+  <Tab>
+    To pin a file using the CLI you need to be authenticated, with a project seelcted and use the `add` command.
+    ```shellscript filename="Pinning a file" copy
+        > fleek ipfs add hello.txt
+        IPFS Hash: Qmanou5uhcGhyW7noyB7LNFJBZkKcuUZnmpHeQSaidJ367
+    ```
+    When the file has been uploaded you will get the Content Hash corresponding to the file or directories uploaded. You can user a public IPFS gateway to check the uploaded file, <a href='http://ipfs.io/ipfs/QmRhFGKcqiG2XzbcsimRpd553HCmotisZtam5b4xFPxWDv'> like this</a>.
+  </Tab>
+  <Tab>
+    <Callout type="warning" emoji="⚠️">
+        SDK documentation is under construction
+    </Callout>
+  </Tab>
+  <Tab>
+    <Callout type="warning" emoji="⚠️">
+        UI documentation is under construction
+    </Callout>
+  </Tab>
+</Tabs>

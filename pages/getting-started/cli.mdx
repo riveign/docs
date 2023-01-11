@@ -1,0 +1,51 @@
+# Fleek CLI
+
+In this guide you will get all the information on how to set up and start interacting with the Command Line Interface (CLI)
+
+### What is a CLI?
+
+CLI is a command line program that accepts text input to execute operating system functions. With this you can interact directlly with all the services surfaced by Fleek directly from you comand line. Fleek CLI provides a unified command line interface to Fleek Services.
+
+### Install
+
+This package requires minimum Node.js 16. To install the CLI run
+
+``` bash copy
+npm install -g @fleekxyz/cli
+```
+
+### Usage
+
+The Fleek CLI command has the following structure:
+
+``` bash copy
+$ fleek <service> <command> [options and parameters]
+```
+
+To view all available services and commands you can use:
+```bash copy
+$ fleek help
+```
+
+### Authentication
+
+All the services in the Fleek CLI require authentication, to do this you have to run
+
+```bash copy
+$ fleek login
+```
+This will trigger the login process, we use Web3Auth to manage authentication. Once the flow is completed you will be greeted like thi:
+
+```bash copy
+$ fleek login
+🔗 Opening browser on https://rough-truth-3196.on.fleek.co/login.html?verificationSession=... 
+🧑‍💻 Please login to continue
+✅ Successfully logged in.
+```
+
+If at any point you want to logout yo can do so:
+
+```bash copy
+$ fleek logout
+✅ Successfully logged out.
+```
