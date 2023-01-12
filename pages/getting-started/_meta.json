@@ -1,6 +1,5 @@
 {
-  "index": "Solution Architecture",
+  "index": "Key Concepts",
   "cli": "CLI",
-  "sdk": "SDK",
-  "ui": "UI"
+  "sdk": "SDK"
 }
