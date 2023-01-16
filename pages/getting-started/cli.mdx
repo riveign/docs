@@ -1,14 +1,14 @@
 ![CLI](/fleek-cli.png)
 
-In this guide you will get all the information on how to set up and start interacting with the Command Line Interface (CLI)
+In this guide you will get all the information on how to set up and start interacting with Fleek's Command Line Interface (CLI)
 
 ### What is a CLI?
 
-CLI is a command line program that accepts text input to execute operating system functions. With this you can interact directlly with all the services surfaced by Fleek directly from you comand line. Fleek CLI provides a unified command line interface to Fleek Services.
+A CLI is a command-line program that accepts text input to execute operating system functions. With this you can interact directlly with all the services surfaced by Fleek directly from you comand line. Fleek CLI provides a unified command line interface to Fleek Services.
 
 ### Install
 
-This package requires minimum Node.js 16. To install the CLI run
+This package requires Node.js 16 at a minimum. To install the CLI run
 
 ``` bash copy
 npm install -g @fleekxyz/cli
@@ -29,7 +29,7 @@ $ fleek help
 
 ### Authentication
 
-All the services in the Fleek CLI require authentication, to do this you have to run
+All the services in the Fleek CLI require authentication, to do this you have to run:
 
 ```bash copy
 $ fleek login
@@ -52,7 +52,7 @@ $ fleek logout
 
 ### Projects
 
-As explained [before](/getting-started#projects), to interact with services you need to have a project selected. This can be managed via the CLI too!
+As explained [here](/getting-started#projects), to interact with services you need to have a project. This can be created and managed via the CLI too!
 
 To create a project you can do it like this:
 
@@ -61,7 +61,7 @@ $ fleek projects created
 $ ? Enter project name: › 
 ```
 
-When entered a correct name you will be automatically switched to it. Also you can be switching through the different projects usign the 'switch' command that will promt a selector
+When entered a correct name, you will be automatically switched to it. Also you can switch through the different projects usign the 'switch' command that will promt a selector:
 
 ```bash copy
 $ fleek projects switch

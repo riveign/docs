@@ -2,9 +2,9 @@
 
 ## What is IPNS?
 
-The InterPlanetary Name System (IPNS) is a system for creating mutable pointers to CIDs known as names or IPNS names. IPNS names can be thought of as links that can be updated over time, while retaining the verifiability of content addressing.
+The InterPlanetary Name System (IPNS) is a system for creating mutable pointers to CIDs known as names or IPNS names. IPNS names can be thought of as links that can be updated over time, while retaining the verifiability of content addressing. In this case in particular, they are mostly used to represent IPFS files (through their hashes).
 
-If you want to know more about IPNS and how it works you can read it [here] (https://docs.ipfs.tech/concepts/ipns/#interplanetary-name-system-ipns)
+If you want to know more about IPNS and how it works you can read it [here](https://docs.ipfs.tech/concepts/ipns/#interplanetary-name-system-ipns)
 
 ## Creating an IPNS record
 
@@ -17,7 +17,7 @@ import { Callout } from 'nextra-theme-docs'
 
 <Tabs items={['CLI']}>
   <Tab>
-    To create an IPNS record using the CLI you need to be authenticated, with a project seelcted and use the `create` command.
+    To create an IPNS record using the CLI you need to be authenticated, with a project selected and use the `create` command.
     ```shellscript filename="PCreating an IPNS record" copy
         > fleek ipns create
         > Success! IPNS record created.
@@ -40,13 +40,13 @@ import { Callout } from 'nextra-theme-docs'
 
 ## Publishing a record
 
-Publishing an IPNS record means advertising it so that other nodes can resolve1 it, thus mapping the record to a CID so that the gateway can resolve it.
+Publishing an IPNS record means advertising it so that other nodes can resolve it, thus mapping the record to a CID so that the gateway can resolve to it and direct user to the set content.
 
 To publish an IPNS record you can do as follows
 
 <Tabs items={['CLI']}>
   <Tab>
-    To publish an IPNS record with a CID using the CLI you need to be authenticated, with a project selcted and use the `publish` command.
+    To publish an IPNS record with a CID using the CLI you need to be authenticated, with a project selected and use the `publish` command.
     ```shellscript filename="PCreating an IPNS record" copy
         > fleek ipns publish k51qzi5uqu5didozh8jmvbnowwj2d545yacagcply19yvjz8rhn0i1hrbw2thy QmRG4xcsmoZuXqKuPz3uVBgvo3GZ6k1kLZWhmvzuKtDr9s
         > Success! IPNS record published.
@@ -73,7 +73,7 @@ You can use the resolver to see if what is mapped to a record (yours or someones
 
 <Tabs items={['CLI']}>
   <Tab>
-    To resole an IPNS record using the CLI you need to be authenticated, with a project seelcted and use the `resolve` command.
+    To resole an IPNS record using the CLI you need to be authenticated, with a project selected and use the `resolve` command.
     ```shellscript filename="PCreating an IPNS record" copy
         > fleek ipns resolve k51qzi5uqu5didozh8jmvbnowwj2d545yacagcply19yvjz8rhn0i1hrbw2thy
         > Success! /ipfs/QmRG4xcsmoZuXqKuPz3uVBgvo3GZ6k1kLZWhmvzuKtDr9s
@@ -99,7 +99,7 @@ If at any time you want to check all the IPNS records that were created / publis
 
 <Tabs items={['CLI']}>
   <Tab>
-    To resole an IPNS record using the CLI you need to be authenticated, with a project seelcted and use the `resolve` command.
+    To resole an IPNS record using the CLI you need to be authenticated, with a project selected and use the `resolve` command.
     ```shellscript filename="PCreating an IPNS record" copy
         > fleek ipns list
         > Success! /ipfs/QmRG4xcsmoZuXqKuPz3uVBgvo3GZ6k1kLZWhmvzuKtDr9s
