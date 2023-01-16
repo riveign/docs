@@ -1,1 +1,122 @@
-# IPNS
+![Pinning](/fleek-ipns.png)
+
+## What is IPNS?
+
+The InterPlanetary Name System (IPNS) is a system for creating mutable pointers to CIDs known as names or IPNS names. IPNS names can be thought of as links that can be updated over time, while retaining the verifiability of content addressing.
+
+If you want to know more about IPNS and how it works you can read it [here] (https://docs.ipfs.tech/concepts/ipns/#interplanetary-name-system-ipns)
+
+## Creating an IPNS record
+
+Creating an IPNS record refers to the creation of an IPNS record and signing it with a private key. Note: Currently Fleek holds the private key with wich all records ar being sigend, in future iterations there will be an option for the user to manage their own keys.
+
+To create your first IPNS record you can do as follows
+
+import { Tab, Tabs } from 'nextra-theme-docs'
+import { Callout } from 'nextra-theme-docs'
+
+<Tabs items={['CLI', 'SDK', 'UI']}>
+  <Tab>
+    To create an IPNS record using the CLI you need to be authenticated, with a project seelcted and use the `create` command.
+    ```shellscript filename="PCreating an IPNS record" copy
+        > fleek ipns create
+        > Success! IPNS record created.
+        > k51qzi5uqu5didozh8jmvbnowwj2d545yacagcply19yvjz8rhn0i1hrbw2thy
+
+    ```
+    With the IPNS rescord created you can now update it with a CID and publish it to the the different nodes so it can be resolved.
+  </Tab>
+  <Tab>
+    <Callout type="warning" emoji="⚠️">
+        SDK documentation is under construction
+    </Callout>
+  </Tab>
+  <Tab>
+    <Callout type="warning" emoji="⚠️">
+        UI documentation is under construction
+    </Callout>
+  </Tab>
+</Tabs>
+
+## Publishing a record
+
+Publishing an IPNS record means advertising it so that other nodes can resolve1 it, thus mapping the record to a CID so that the gateway can resolve it.
+
+To publish an IPNS record you can do as follows
+
+<Tabs items={['CLI', 'SDK', 'UI']}>
+  <Tab>
+    To publish an IPNS record with a CID using the CLI you need to be authenticated, with a project selcted and use the `publish` command.
+    ```shellscript filename="PCreating an IPNS record" copy
+        > fleek ipns publish k51qzi5uqu5didozh8jmvbnowwj2d545yacagcply19yvjz8rhn0i1hrbw2thy QmRG4xcsmoZuXqKuPz3uVBgvo3GZ6k1kLZWhmvzuKtDr9s
+        > Success! IPNS record published.
+
+    ```
+  </Tab>
+  <Tab>
+    <Callout type="warning" emoji="⚠️">
+        SDK documentation is under construction
+    </Callout>
+  </Tab>
+  <Tab>
+    <Callout type="warning" emoji="⚠️">
+        UI documentation is under construction
+    </Callout>
+  </Tab>
+</Tabs>
+
+## Resolving an IPNS record
+
+Fleek comes with a built in resolver for IPNS that allows you to get the CID based on an IPNS record.
+
+You can use the resolver to see if what is mapped to a record (yours or someones elses).
+
+<Tabs items={['CLI', 'SDK', 'UI']}>
+  <Tab>
+    To resole an IPNS record using the CLI you need to be authenticated, with a project seelcted and use the `resolve` command.
+    ```shellscript filename="PCreating an IPNS record" copy
+        > fleek ipns resolve k51qzi5uqu5didozh8jmvbnowwj2d545yacagcply19yvjz8rhn0i1hrbw2thy
+        > Success! /ipfs/QmRG4xcsmoZuXqKuPz3uVBgvo3GZ6k1kLZWhmvzuKtDr9s
+        
+
+    ```
+  </Tab>
+  <Tab>
+    <Callout type="warning" emoji="⚠️">
+        SDK documentation is under construction
+    </Callout>
+  </Tab>
+  <Tab>
+    <Callout type="warning" emoji="⚠️">
+        UI documentation is under construction
+    </Callout>
+  </Tab>
+</Tabs>
+
+## Listing records
+
+If at any time you want to check all the IPNS records that were created / published with this project you can do so
+
+<Tabs items={['CLI', 'SDK', 'UI']}>
+  <Tab>
+    To resole an IPNS record using the CLI you need to be authenticated, with a project seelcted and use the `resolve` command.
+    ```shellscript filename="PCreating an IPNS record" copy
+        > fleek ipns list
+        > Success! /ipfs/QmRG4xcsmoZuXqKuPz3uVBgvo3GZ6k1kLZWhmvzuKtDr9s
+        id                         name                                                            hash                                          
+        -----------------------------------------------------------------------------------------------------------------------------------------   
+        clcuq190y0000jt08mpjw7pdz  k51qzi5uqu5didozh8jmvbnowwj2d545yacagcply19yvjz8rhn0i1hrbw2thy  QmRG4xcsmoZuXqKuPz3uVBgvo3GZ6k1kLZWhmvzuKtDr9s
+
+    ```
+  </Tab>
+  <Tab>
+    <Callout type="warning" emoji="⚠️">
+        SDK documentation is under construction
+    </Callout>
+  </Tab>
+  <Tab>
+    <Callout type="warning" emoji="⚠️">
+        UI documentation is under construction
+    </Callout>
+  </Tab>
+</Tabs>
