@@ -8,13 +8,10 @@ const config: DocsThemeConfig = {
       <span> Fleek Docs</span>
     </>
   ),
-  project: {
-    link: 'https://github.com/fleekHQ/fleek',
-  },
   chat: {
     link: 'https://discord.gg/fleekxyz',
   },
-  docsRepositoryBase: 'https://github.com/fleekHQ/fleek',
+  docsRepositoryBase: 'https://github.com/fleekxyz/fleekxyz-support',
   footer: {
     text: 'Fleek',
   },
