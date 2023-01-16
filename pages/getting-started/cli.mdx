@@ -34,7 +34,7 @@ All the services in the Fleek CLI require authentication, to do this you have to
 ```bash copy
 $ fleek login
 ```
-This will trigger the login process, we use Web3Auth to manage authentication. Once the flow is completed you will be greeted like thi:
+This will trigger the login process, we use Web3Auth to manage authentication. Once the flow is completed you will be greeted like this:
 
 ```bash copy
 $ fleek login
@@ -48,4 +48,24 @@ If at any point you want to logout yo can do so:
 ```bash copy
 $ fleek logout
 ✅ Successfully logged out.
+```
+
+### Projects
+
+As explained [before](/getting-started#projects), to interact with services you need to have a project selected. This can be managed via the CLI too!
+
+To create a project you can do it like this:
+
+```bash copy
+$ fleek projects created
+$ ? Enter project name: › 
+```
+
+When entered a correct name you will be automatically switched to it. Also you can be switching through the different projects usign the 'switch' command that will promt a selector
+
+```bash copy
+$ fleek projects switch
+❯   project-1
+    project-2
+    project-3
 ```
