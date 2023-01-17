@@ -2,8 +2,14 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
- 
-export default {
+
+const config: DocsThemeConfig = {
+  logo: (
+    <>
+      <img width="18" height="18" src="/logo.png"></img>
+      <span>   Fleek Docs</span>
+    </>
+  ),
   head: () => {
     const { asPath } = useRouter()
     const { frontMatter } = useConfig()
@@ -13,23 +19,12 @@ export default {
       <link rel="icon" href="https://framerusercontent.com/modules/8lURkGaLHuTnWArKu6mc/rV5DHjjsTGqoQVhBu38M/assets/NgRGJcWfo5FgvKHmn9cW55eJbE.png"></link>
       <meta property="og:description" content="Welcome to Fleek.xyz's documentation. Build scalable, next-gen web3 applications." />
       <meta property="og:image" content="https://framerusercontent.com/modules/8lURkGaLHuTnWArKu6mc/rV5DHjjsTGqoQVhBu38M/assets/6G0ANVJCByPWie2H9WgR3gSi0.jpg"></meta>
-          <!-- Twitter -->
-      <meta property="twitter:card" content="summary_large_image">
-      <meta property="twitter:title" content="Docs - Fleek.xyz">
-      <meta property="twitter:description" content="Welcome to Fleek.xyz's documentation. Build scalable, next-gen web3 applications.">
-      <meta property="twitter:image" content="https://framerusercontent.com/modules/8lURkGaLHuTnWArKu6mc/rV5DHjjsTGqoQVhBu38M/assets/6G0ANVJCByPWie2H9WgR3gSi0.jpg">
+      <meta property="twitter:card" content="summary_large_image"></meta>
+      <meta property="twitter:title" content="Docs - Fleek.xyz"></meta>
+      <meta property="twitter:description" content="Welcome to Fleek.xyz's documentation. Build scalable, next-gen web3 applications."></meta>
+      <meta property="twitter:image" content="https://framerusercontent.com/modules/8lURkGaLHuTnWArKu6mc/rV5DHjjsTGqoQVhBu38M/assets/6G0ANVJCByPWie2H9WgR3gSi0.jpg"></meta>
     </>
   },
-}
-
-
-const config: DocsThemeConfig = {
-  logo: (
-    <>
-      <img width="selected" height="18" src="/logo.png"></img>
-      <span>   Fleek Docs</span>
-    </>
-  ),
   chat: {
     link: 'https://discord.gg/fleekxyz',
   },
