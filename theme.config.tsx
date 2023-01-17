@@ -15,17 +15,6 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter()
     const { frontMatter } = useConfig()
     return <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-WPCYYTKV5P"></Script>
-      <Script id="google-tag-manager" strategy="afterInteractive" dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', 'G-WPCYYTKV5P');
-          `,
-        }}
-      />
       <meta property="og:url" content={`https://docs.fleek.xyz${asPath}`} />
       <meta property="og:title" content={frontMatter.title || 'Fleek.xyz'} />
       <link rel="icon" href="https://framerusercontent.com/modules/8lURkGaLHuTnWArKu6mc/rV5DHjjsTGqoQVhBu38M/assets/NgRGJcWfo5FgvKHmn9cW55eJbE.png"></link>
@@ -35,6 +24,17 @@ const config: DocsThemeConfig = {
       <meta property="twitter:title" content="Docs - Fleek.xyz"></meta>
       <meta property="twitter:description" content="Welcome to Fleek.xyz's documentation. Build scalable, next-gen web3 applications."></meta>
       <meta property="twitter:image" content="https://framerusercontent.com/modules/8lURkGaLHuTnWArKu6mc/rV5DHjjsTGqoQVhBu38M/assets/6G0ANVJCByPWie2H9WgR3gSi0.jpg"></meta>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPCYYTKV5P"></script>
+      <script id="google-tag-manager" dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-WPCYYTKV5P');
+          `,
+        }}
+      />
     </>
   },
   chat: {
