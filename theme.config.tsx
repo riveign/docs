@@ -24,8 +24,8 @@ const config: DocsThemeConfig = {
       <meta property="twitter:title" content="Docs - Fleek.xyz"></meta>
       <meta property="twitter:description" content="Welcome to Fleek.xyz's documentation. Build scalable, next-gen web3 applications."></meta>
       <meta property="twitter:image" content="https://framerusercontent.com/modules/8lURkGaLHuTnWArKu6mc/rV5DHjjsTGqoQVhBu38M/assets/6G0ANVJCByPWie2H9WgR3gSi0.jpg"></meta>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPCYYTKV5P"></script>
-      <script id="google-tag-manager" dangerouslySetInnerHTML={{
+      <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-WPCYYTKV5P"></script>
+      <script type="text/javascript" id="google-tag-manager" dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
